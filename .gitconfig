@@ -1,0 +1,5 @@
+[user]
+	name = Harald
+	email = haraldwoerl@mail.de
+[core]
+	autocrlf = false
