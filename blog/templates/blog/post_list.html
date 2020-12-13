@@ -10,8 +10,8 @@
 		{% for post in posts %}
 			<div>
 				<h2><a href="">{{ post.title }}</a></h2>
-				<p>published: {{ post.published_date }}</p>
 				<p>{{ post.text|linebreaksbr }}</p>
+				<p>published: {{ post.published_date }}</p>
 			</div>
 		{% endfor %}
     </body>
