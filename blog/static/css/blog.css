@@ -1,5 +1,6 @@
 h1 a {
-    color: red;
+    color: yellow;
+	font-family: 'Lobster';
 }
 
 h2 a {
@@ -8,4 +9,32 @@ h2 a {
 
 body {
     padding-left: 20px;
+}
+
+.Seitenkopf {
+	background-color: #C25100;
+	margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.Seitenkopf h1, .Seitenkopf h1 a, .Seitenkopf h1 a:visited, .Seitenkopf h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #125fe2;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.date {
+    color: #828282;
 }
