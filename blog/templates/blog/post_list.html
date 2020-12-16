@@ -1,18 +1,6 @@
-{% load static %}
-<html>
-    <head>
-        <title>Haralds Blog unter Django</title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="Seitenkopf">
-			<h1><a href="/">Haralds Blog</a></h1>
-		</div>
-
-		<div class='content'>
+		{% extends 'blog/base.html' %}
+		
+		{% block content %}
 			{% for post in posts %}
 				<div class="post">
 					<h2><a href='admin/blog/post/{{post.id}}/change'>{{ post.title }}</a></h2>
@@ -22,6 +10,4 @@
 					</div>
 				</div>
 			{% endfor %}
-		</div>
-    </body>
-</html>
+		{% endblock %}
